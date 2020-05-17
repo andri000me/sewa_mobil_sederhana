@@ -1,0 +1,8 @@
+//upload gambar
+
+$imageName = $_FILES['image']['name'];
+$tmpName = $_FILES['image']['tmp_name'];
+$size = $_FILES['image']['size'];
+$directori = "gambar/";
+
+$upload = move_uploaded_file($tmpName,$directori.$imageName);
